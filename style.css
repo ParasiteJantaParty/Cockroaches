@@ -172,11 +172,70 @@ body {
     50% { transform: translateY(-10px); }
   }
   
-  .icon {
+.icon {
     width: 20px;
     height: 20px;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 20svh;
+    height: auto;
+
+    padding-top: 10px;
+    padding-bottom: 16px;
+    background-position: center;
+    background-size: cover; /* keep bg visible, no removal */
   }
+
+  .hero-content {
+    padding: 20px 16px;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 92vw;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin: 6px 0 14px;
+  }
+
+  .navbar {
+    padding: 12px 10px;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+  }
+
+  .navbar a {
+    margin: 0;
+    padding: 6px 10px;
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 40px 16px;
+  }
+
+  .agenda li {
+    font-size: 1.05em;
+    padding: 12px 14px;
+  }
+
+  .support {
+    gap: 18px;
+  }
+
+  .support img {
+    width: min(92vw, 260px);
+  }
+}
+
 
 
